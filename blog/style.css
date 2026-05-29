@@ -1,0 +1,170 @@
+:root {
+  --paper: #f3ede1;
+  --ink: #1a1714;
+  --ink-2: #3a3530;
+  --muted: #7a6f63;
+  --rule: #d8cfbe;
+  --accent: #c47a1d;
+  --serif: 'Instrument Serif', Georgia, serif;
+  --sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* nav */
+nav {
+  padding: 28px 0 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .06em;
+  color: var(--muted);
+}
+nav a { color: inherit; text-decoration: none; transition: color .2s; }
+nav a:hover { color: var(--accent); }
+
+/* post index */
+.page-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(48px, 8vw, 80px);
+  line-height: 1;
+  margin: 56px 0 56px;
+  letter-spacing: -.01em;
+}
+.posts { list-style: none; padding: 0; margin: 0; }
+.posts li {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 24px;
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+  align-items: baseline;
+}
+.posts li:last-child { border-bottom: 1px solid var(--rule); }
+.posts time {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+.posts a {
+  font-family: var(--serif);
+  font-size: 22px;
+  color: var(--ink);
+  text-decoration: none;
+  line-height: 1.25;
+}
+.posts a:hover { color: var(--accent); }
+.posts .tag {
+  display: block;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+.empty {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  padding: 32px 0;
+  border-top: 1px solid var(--rule);
+}
+
+/* post page */
+.post-header { margin: 56px 0 0; }
+.post-header h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.1;
+  margin: 0 0 16px;
+  letter-spacing: -.01em;
+}
+.post-meta {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: .04em;
+  margin-bottom: 56px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* body text */
+.post-body p { margin: 0 0 1.3em; }
+.post-body a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(196,122,29,.3); }
+.post-body a:hover { border-color: var(--accent); }
+.post-body h2 {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.15; margin: 2em 0 .6em;
+}
+.post-body h3 {
+  font-family: var(--sans); font-weight: 600;
+  font-size: 16px; letter-spacing: .02em;
+  margin: 1.8em 0 .5em; color: var(--ink);
+}
+.post-body ul, .post-body ol { padding-left: 1.4em; margin: 0 0 1.3em; }
+.post-body li { margin-bottom: .4em; }
+.post-body code {
+  font-family: var(--mono); font-size: .82em;
+  background: rgba(0,0,0,.06); padding: 2px 6px; border-radius: 3px;
+}
+.post-body pre {
+  background: #1a1714; color: #e8dfca;
+  padding: 20px 22px; border-radius: 6px;
+  overflow-x: auto;
+  font-family: var(--mono); font-size: 14px; line-height: 1.6;
+  margin: 1.8em 0;
+}
+.post-body pre code { background: none; padding: 0; font-size: inherit; }
+.post-body blockquote {
+  border-left: 2px solid var(--rule);
+  margin: 1.8em 0; padding: 0 0 0 22px;
+  color: var(--ink-2); font-style: italic;
+}
+.post-body hr { border: 0; border-top: 1px solid var(--rule); margin: 2.8em 0; }
+.post-body img { max-width: 100%; height: auto; display: block; margin: 2em 0; }
+
+footer {
+  margin-top: 80px;
+  padding: 28px 0 40px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--muted);
+  letter-spacing: .04em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+footer a { color: inherit; text-decoration: none; }
+footer a:hover { color: var(--accent); }
+
+@media (max-width: 540px) {
+  .posts li { grid-template-columns: 1fr; gap: 4px; }
+}

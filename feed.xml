@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vatsal Jha</title>
+    <link>https://vatsal-jha256.github.io/vatsalPortfolio</link>
+    <description>Writing by Vatsal Jha — ML, agentic systems, things worth thinking about.</description>
+    <language>en</language>
+    <atom:link href="https://vatsal-jha256.github.io/vatsalPortfolio/feed.xml" rel="self" type="application/rss+xml"/>
+    <managingEditor>vatsaljha17@gmail.com (Vatsal Jha)</managingEditor>
+    <webMaster>vatsaljha17@gmail.com (Vatsal Jha)</webMaster>
+
+    <!-- Posts appear here. Example entry:
+    <item>
+      <title>Why bandits keep showing up in my work</title>
+      <link>https://vatsal-jha256.github.io/vatsalPortfolio/blog/posts/bandits.html</link>
+      <guid isPermaLink="true">https://vatsal-jha256.github.io/vatsalPortfolio/blog/posts/bandits.html</guid>
+      <pubDate>Thu, 29 May 2026 00:00:00 +0000</pubDate>
+      <description>Five projects, same family of algorithms. An attempt to say why.</description>
+    </item>
+    -->
+
+  </channel>
+</rss>
