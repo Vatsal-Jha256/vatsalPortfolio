@@ -196,8 +196,16 @@ const LEADERSHIP = [
   {
     role: "Chairperson",
     org: "Youth Red Cross, VIT",
-    when: "Jan 2025 — present",
-    desc: "780+ blood donations facilitated; community events with 3,000+ participants. Vice-Chairperson the year prior (Jan 2024 – Jan 2025), running strategy and event ops.",
+    when: "Jan 2025 — Jan 2026",
+    desc: "780+ blood donations facilitated; community events with 3,000+ participants.",
+    note: "",
+    href: "",
+  },
+  {
+    role: "Vice-Chairperson",
+    org: "Youth Red Cross, VIT",
+    when: "Jan 2024 — Jan 2025",
+    desc: "Strategy and event operations for the chapter year prior.",
     note: "",
     href: "",
   },
