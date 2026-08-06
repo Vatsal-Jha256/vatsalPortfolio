@@ -37,7 +37,7 @@ const WORK = [
     yr: "Jun — Aug 2024",
     org: "CEEW, Delhi",
     role: "Data Science Intern",
-    desc: "BERTopic over 92k qualification documents → 350 interpretable topics for job-matching. ML-based bias correction on AQI chemical forecasts (80% error reduction, presented at IICAQM '24). Solar-investment dashboard with IRR / payback / LCOE modelling.",
+    desc: "BERTopic over 92k qualification documents → 350 interpretable topics for job-matching. ML-based bias correction on AQI chemical forecasts (MAPE 43% → 27%, presented at IICAQM '24). Solar-investment dashboard with IRR / payback / LCOE modelling.",
     tag: "",
   },
   {
@@ -79,6 +79,9 @@ const ACHIEVEMENTS = [
   { yr:"2024", t:"National Topper", v:"Responsible & Safe AI · IITM × IIITH",  n:"11,876 participants" },
   { yr:"2024", t:"National Topper", v:"AI for Investment · IIT Kanpur",        n:"10,749 participants" },
   { yr:"2023", t:"National Topper", v:"Reinforcement Learning · IIT Madras",   n:"6,455 participants"  },
+  { yr:"2023", t:"National Winner", v:"ISRO SIF Hackathon · Indian International Science Festival, Delhi", n:"Narad" },
+  { yr:"2024", t:"Top 3 in Nation", v:"Karnataka State Police Hackathon, Bangalore", n:"" },
+  { yr:"2024", t:"Winner", v:"Samsung PRISM Hackathon", n:"" },
   { yr:"2024", t:"Raman Research Award", v:"VIT · ₹10,000 cash prize for published research", n:"" },
 ];
 
@@ -87,7 +90,7 @@ const PROJECTS = [
     name: "HERO",
     blurb: "EV charging-station placement, end-to-end. Geospatial ML predicts grid-cell demand from OpenStreetMap features; a multi-armed-bandit RL controller does the micro-placement, validated in SUMO. Case studies in Ann Arbor, Mumbai, São Paulo.",
     meta: "Python · SUMO · Bandits · OSM",
-    href: "https://github.com/Vaav-ai/HERO-EVCS",
+    href: "",
     featured: true,
   },
   {
@@ -134,7 +137,7 @@ const PROJECTS = [
   },
   {
     name: "Karnataka Traffic RL",
-    blurb: "Traffic-signal optimisation for the Karnataka State Police, in SUMO. RL controller cut average waiting time by ~50% over fixed-time baselines. Top 3 finalist out of 380 teams; demoed at Microsoft Research Bangalore.",
+    blurb: "Traffic-signal optimisation for the Karnataka State Police, in SUMO. RL controller cut average waiting time by ~50% over fixed-time baselines. Top 3 finalist out of 380 teams; invited to demo at Microsoft Research Bangalore.",
     meta: "SUMO · RL · KSP Hackathon",
     href: "https://github.com/Vatsal-Jha256/sumo-rl",
   },
@@ -176,10 +179,17 @@ const PUBS = [
     role: "first author · best paper",
   },
   {
+    yr: "2026",
+    title: "Nonlinear Model Predictive Control for Dynamic Obstacle Avoidance in RoboCup SSL",
+    venue: "HINT · Manipal Institute of Technology · accepted",
+    href: "https://github.com/TeamPrometheusVITV/nmpc-robocup-ssl",
+    role: "co-author",
+  },
+  {
     yr: "WIP",
     title: "RL for portable EV charging-station placement (HERO)",
-    venue: "First-author manuscript in preparation",
-    href: "https://github.com/Vaav-ai/HERO-EVCS",
+    venue: "Manuscript in preparation",
+    href: "",
     role: "first author",
   },
 ];
@@ -189,7 +199,7 @@ const LEADERSHIP = [
     role: "Founder & Team Lead",
     org: "Team Prometheus, VIT Vellore",
     when: "May 2024 — present",
-    desc: "Founded VIT's first RoboCup Small-Size League team, 30+ members across software, electronics, and hardware. Building toward our competition debut: trajectory planning (NMPC), reinforcement-learning passing, custom electronics and chassis.",
+    desc: "Founded VIT's first RoboCup Small-Size League team, 30+ members across software, electronics, and hardware. Secured $200,000+ in funding for academic and research initiatives. Building toward our competition debut: trajectory planning (NMPC), reinforcement-learning passing, custom electronics and chassis.",
     note: "It's a young team, no competitions yet. The work is the work.",
     href: "https://www.teamprometheus.in/",
   },
@@ -345,7 +355,7 @@ function HeroEditorial(){
 
         <div className="sub">
           <div className="lead reveal">
-            Final-year CS undergrad at VIT. I work on agentic systems, RL, and applied ML, usually somewhere between research and shipping. Founder of Team Prometheus; Chairperson of Youth Red Cross VIT.
+            Final-year CS undergrad at VIT. I work on applied AI for real-world systems — using whatever a problem needs (bandits, RL, multi-agent orchestration, LLMs) to solve things I've long believed were solvable, and trying to do it responsibly. Founder of Team Prometheus; Chairperson of Youth Red Cross VIT.
           </div>
           <div className="right reveal">
             <div><span className="k">Now</span> &nbsp; Samsung Research (PPO offered)</div>
