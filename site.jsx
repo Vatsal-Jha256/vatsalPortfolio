@@ -83,6 +83,8 @@ const ACHIEVEMENTS = [
   { yr:"2024", t:"Top 3 in Nation", v:"Karnataka State Police Hackathon, Bangalore", n:"" },
   { yr:"2024", t:"Winner", v:"Samsung PRISM Hackathon", n:"" },
   { yr:"2024", t:"Raman Research Award", v:"VIT · ₹10,000 cash prize for published research", n:"" },
+  { yr:"2025", t:"Excellent Worklet", v:"Samsung PRISM R&D", n:"" },
+  { yr:"2026", t:"1st Prize", v:"Intern Rendezvous 2.0 · testAIng", n:"" },
 ];
 
 const PROJECTS = [
@@ -147,6 +149,12 @@ const PROJECTS = [
     meta: "MATLAB · MPC · Robotics",
     href: "https://github.com/TeamPrometheusVITV/nmpc-robocup-ssl",
   },
+  {
+    name: "Eldermere",
+    blurb: "A browser MUD and creature-RPG set in Arthurian legend, mostly built as an excuse to write procedural audio and 2D background generation from scratch. Everything — rooms, factions, quests, lore — is a data-driven content pack, so the world grows without touching engine code.",
+    meta: "Go · Procedural audio/visuals · Multiplayer",
+    href: "https://vatsal-jha256.github.io/eldermere/#/",
+  },
 ];
 
 const PUBS = [
@@ -199,7 +207,7 @@ const LEADERSHIP = [
     role: "Founder & Team Lead",
     org: "Team Prometheus, VIT Vellore",
     when: "May 2024 — present",
-    desc: "Founded VIT's first RoboCup Small-Size League team, 30+ members across software, electronics, and hardware. Secured $200,000+ in funding for academic and research initiatives. Building toward our competition debut: trajectory planning (NMPC), reinforcement-learning passing, custom electronics and chassis.",
+    desc: "Founded VIT's first RoboCup Small-Size League team, 30+ members across software, electronics, and hardware. Raised $200,000+ to get the team's research and hardware work funded. Building toward our competition debut: trajectory planning (NMPC), reinforcement-learning passing, custom electronics and chassis.",
     note: "It's a young team, no competitions yet. The work is the work.",
     href: "https://www.teamprometheus.in/",
   },
@@ -355,7 +363,7 @@ function HeroEditorial(){
 
         <div className="sub">
           <div className="lead reveal">
-            Final-year CS undergrad at VIT. I work on applied AI for real-world systems — using whatever a problem needs (bandits, RL, multi-agent orchestration, LLMs) to solve things I've long believed were solvable, and trying to do it responsibly. Founder of Team Prometheus; Chairperson of Youth Red Cross VIT.
+            Final-year CS undergrad at VIT. Method doesn't matter much to me — bandits, RL, multi-agent systems, whatever gets there — what matters is whether it actually holds up once it's out in the world. Founder of Team Prometheus; Chairperson of Youth Red Cross VIT.
           </div>
           <div className="right reveal">
             <div><span className="k">Now</span> &nbsp; Samsung Research (PPO offered)</div>
@@ -820,7 +828,7 @@ function Contact(){
           <div className="channels reveal">
             <a href="mailto:vatsaljha17@gmail.com"><span>Email · vatsaljha17@gmail.com</span><span className="arrow">→</span></a>
             <a href="https://github.com/Vatsal-Jha256" target="_blank" rel="noopener"><span>GitHub · @Vatsal-Jha256</span><span className="arrow">↗</span></a>
-            <a href="https://linkedin.com/in/vatsal-jha-6a669724b" target="_blank" rel="noopener"><span>LinkedIn · vatsal-jha</span><span className="arrow">↗</span></a>
+            <a href="https://linkedin.com/in/vatsal-jha-b4a6a5390" target="_blank" rel="noopener"><span>LinkedIn · vatsal-jha</span><span className="arrow">↗</span></a>
             <a href="https://scholar.google.com/citations?user=o9ErjT4AAAAJ" target="_blank" rel="noopener"><span>Google Scholar</span><span className="arrow">↗</span></a>
             <a href={RESUME_URL} target="_blank" rel="noopener"><span>Resume · PDF</span><span className="arrow">↓</span></a>
           </div>
