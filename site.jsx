@@ -89,6 +89,12 @@ const ACHIEVEMENTS = [
 
 const PROJECTS = [
   {
+    name: "Eldermere",
+    blurb: "A browser MUD and creature-RPG set in Arthurian legend, built partly as an excuse to write procedural audio and 2D background generation from scratch. Rooms, factions, quests, and lore are all data-driven content packs, so the world grows without touching engine code.",
+    meta: "Go · Procedural audio/visuals · Multiplayer",
+    href: "https://vatsal-jha256.github.io/eldermere/#/",
+  },
+  {
     name: "HERO",
     blurb: "EV charging-station placement, end-to-end. Geospatial ML predicts grid-cell demand from OpenStreetMap features; a multi-armed-bandit RL controller does the micro-placement, validated in SUMO. Case studies in Ann Arbor, Mumbai, São Paulo.",
     meta: "Python · SUMO · Bandits · OSM",
@@ -148,12 +154,6 @@ const PROJECTS = [
     blurb: "Nonlinear MPC for smooth, obstacle-aware trajectory planning in the Small-Size League, written as an alternative to bang-bang controllers. ~5% velocity uplift over the baseline. With Team Prometheus.",
     meta: "MATLAB · MPC · Robotics",
     href: "https://github.com/TeamPrometheusVITV/nmpc-robocup-ssl",
-  },
-  {
-    name: "Eldermere",
-    blurb: "A browser MUD and creature-RPG set in Arthurian legend, mostly built as an excuse to write procedural audio and 2D background generation from scratch. Everything — rooms, factions, quests, lore — is a data-driven content pack, so the world grows without touching engine code.",
-    meta: "Go · Procedural audio/visuals · Multiplayer",
-    href: "https://vatsal-jha256.github.io/eldermere/#/",
   },
 ];
 
@@ -363,7 +363,7 @@ function HeroEditorial(){
 
         <div className="sub">
           <div className="lead reveal">
-            Final-year CS undergrad at VIT. Method doesn't matter much to me — bandits, RL, multi-agent systems, whatever gets there — what matters is whether it actually holds up once it's out in the world. Founder of Team Prometheus; Chairperson of Youth Red Cross VIT.
+            Final-year CS undergrad at VIT. I work on agentic systems, RL, and applied ML, usually somewhere between research and shipping. Founder of Team Prometheus; Chairperson of Youth Red Cross VIT.
           </div>
           <div className="right reveal">
             <div><span className="k">Now</span> &nbsp; Samsung Research (PPO offered)</div>
