@@ -1,0 +1,177 @@
+:root {
+  --bg: #ffffff;
+  --text: #171717;
+  --muted: #595959;
+  --accent: #1d4ed8;
+  --border: #e6e6e6;
+  --maxw: 860px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0c0c0d;
+    --text: #e8e8e8;
+    --muted: #a3a3a3;
+    --accent: #7aa2f7;
+    --border: #262626;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  text-underline-offset: 2px;
+}
+a:hover { text-decoration-color: var(--accent); }
+
+header.site {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header.site .name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text);
+}
+
+nav.primary { display: flex; gap: 1.1rem; font-size: 0.95rem; }
+nav.primary a { text-decoration: none; color: var(--muted); }
+nav.primary a:hover, nav.primary a.active { color: var(--text); text-decoration: underline; }
+
+nav.links { display: flex; gap: 1.1rem; font-size: 0.95rem; }
+nav.links a { text-decoration: none; color: var(--muted); }
+nav.links a:hover { color: var(--text); text-decoration: underline; }
+
+h1 {
+  font-size: 1.9rem;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  color: var(--muted);
+  margin: 0 0 1.1rem;
+  max-width: 40em;
+}
+
+.bio { max-width: 42em; margin: 0 0 1.1rem; }
+.bio p { margin: 0 0 0.9rem; }
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  font-size: 0.95rem;
+  margin-bottom: 2.4rem;
+}
+.contact-links a { text-decoration: none; }
+.contact-links a:hover { text-decoration: underline; }
+
+section { margin-bottom: 2.4rem; }
+
+h2 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.item { margin-bottom: 1.3rem; }
+.item:last-child { margin-bottom: 0; }
+
+.item-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+}
+
+.item-title { font-weight: 600; }
+.item-meta { color: var(--muted); font-size: 0.92rem; white-space: nowrap; }
+.item-org { color: var(--muted); font-size: 0.95rem; margin-top: 0.1rem; }
+.item-desc { margin-top: 0.35rem; }
+.item-links { margin-top: 0.35rem; font-size: 0.92rem; }
+.item-links a { margin-right: 0.9rem; text-decoration: none; }
+.item-links a:hover { text-decoration: underline; }
+
+.exp-list .item-head { margin-bottom: 0; }
+
+.more-link { font-size: 0.95rem; }
+
+footer.site {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+footer.site a { color: var(--muted); }
+
+.pub-group { margin-bottom: 1.8rem; }
+.pub-group h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 0 0 0.8rem;
+}
+.pub-entry { margin-bottom: 1rem; }
+.pub-entry .venue { color: var(--muted); }
+.pub-entry .links { font-size: 0.9rem; margin-top: 0.15rem; }
+.pub-entry .links a { margin-right: 0.8rem; text-decoration: none; }
+.pub-entry .links a:hover { text-decoration: underline; }
+
+.cv-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 0.9rem;
+}
+.cv-card .item-title { display: block; margin-bottom: 0.25rem; }
+.cv-card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.6rem; }
+  header.site { flex-direction: column; align-items: flex-start; }
+}

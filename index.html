@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vatsal Jha</title>
+<meta name="description" content="Vatsal Jha — research engineer working on reliable AI systems, agentic infrastructure, and sequential decision-making.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%231d4ed8'/%3E%3Ctext x='12' y='17' font-family='monospace' font-size='13' fill='white' text-anchor='middle'%3EVJ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="site">
+  <a class="name" href="/">Vatsal Jha</a>
+  <nav class="primary">
+    <a href="/" class="active">Home</a>
+    <a href="/publications.html">Publications</a>
+    <a href="/cv.html">CV</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Vatsal Jha</h1>
+  <p class="tagline">Research engineer working on reliable AI systems, agentic infrastructure, and sequential decision-making.</p>
+
+  <div class="bio">
+    <p>I build and evaluate machine-learning systems that have to work under real constraints — from multi-agent root-cause diagnosis at Samsung Research to reinforcement-learning-based infrastructure planning and reliability-focused ML deployment. My work sits between research and engineering: reading the literature, designing the method, and building the system that runs it.</p>
+    <p>I recently completed a B.Tech in Computer Science &amp; Engineering at Vellore Institute of Technology and am looking for research engineering, applied ML, and systems roles.</p>
+  </div>
+
+  <p class="contact-links">
+    <a href="mailto:vatsaljha17@gmail.com">Email</a>
+    <a href="https://github.com/Vatsal-Jha256">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=o9ErjT4AAAAJ&amp;hl=en">Google Scholar</a>
+    <a href="https://linkedin.com/in/vatsal-jha-b4a6a5390">LinkedIn</a>
+    <a href="/cv.html">CV</a>
+  </p>
+
+  <section id="work">
+    <h2>Selected Work</h2>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Agentic root-cause analysis for distributed services</span>
+        <span class="item-meta">Samsung Research India · 2025</span>
+      </div>
+      <div class="item-desc">Designed and built a multi-agent RCA prototype from literature review through evaluation — modality-specialist evidence collection, hypothesis validation, cross-incident retrieval memory, and diagnosis-only safety boundaries over Prometheus, Kubernetes, Jaeger, OpenSearch and Milvus, using Google ADK and MCP. Evaluated on an OpenTelemetry Demo + Chaos Mesh fault-injection testbed.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">HOMA — multilingual agent orchestration for smart homes</span>
+        <span class="item-meta">Samsung PRISM · ICCCNT 2025</span>
+      </div>
+      <div class="item-desc">Led a four-person research team building a multilingual SLM-orchestrated system that decomposes multi-device smart-home commands and coordinates sequential/concurrent execution across 11+ languages, with synthetic multilingual evaluation of Gemma/Qwen/Phi-family models under edge constraints.</div>
+      <div class="item-links"><a href="https://github.com/IISF-SIF/HOMA">code</a></div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">HERO — EV charging-station placement via bandit search</span>
+        <span class="item-meta">VIT Research · under review</span>
+      </div>
+      <div class="item-desc">A two-stage system for EV-charging-station placement: an XGBoost city-level demand model feeds a simulator-in-the-loop multi-armed-bandit search over full station layouts. Outperforms 13 facility-location, metaheuristic and bandit baselines by up to 39.9% composite reward in Ann Arbor SUMO microsimulation, with zero-shot cross-city demand transfer.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Multilingual audio deepfake detection</span>
+        <span class="item-meta">testAIng · 2026</span>
+      </div>
+      <div class="item-desc">Owned ML systems and research for multilingual audio-deepfake detection (ECAPA-TDNN, WavLM, mixture-of-experts), reaching 0.94–0.96 AUC on internal multilingual benchmarks and 1.97% EER on Hindi fine-tuning, then migrated model-heavy inference to Docker/Kubernetes with HPA, probes and Prometheus/Grafana.</div>
+      <div class="item-links"><a href="https://medium.com/@vatsal.jha_28295/one-class-learning-for-audio-deepfake-detection-9a841b79a7bf">writeup</a></div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">ChatterBot — scalable LLM-serving prototype</span>
+        <span class="item-meta">Personal project</span>
+      </div>
+      <div class="item-desc">FastAPI + Ray Serve/vLLM + Redis + RabbitMQ + PostgreSQL serving system with synchronous, queued-async and SSE streaming modes, context caching, retries/circuit breakers and Locust load tests; architecture designed for 10K-concurrency horizontal scaling.</div>
+      <div class="item-links"><a href="https://github.com/Vatsal-Jha256/ChatterBot">code</a></div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Eldermere — multiplayer systems project</span>
+        <span class="item-meta">Personal project</span>
+      </div>
+      <div class="item-desc">A Go + SvelteKit + PostgreSQL browser MUD with WebSocket room/presence state, persistent sessions, data-driven content packs, tests and Docker Compose deployment.</div>
+      <div class="item-links"><a href="https://github.com/Vatsal-Jha256/eldermere">code</a> <a href="https://eldermere.pages.dev/">live</a></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="exp-list">
+      <div class="item">
+        <div class="item-head"><span class="item-title">testAIng</span><span class="item-meta">Jan–Jul 2026</span></div>
+        <div class="item-org">Machine Learning Intern — audio-deepfake detection &amp; ML infrastructure</div>
+      </div>
+      <div class="item">
+        <div class="item-head"><span class="item-title">Samsung Research India</span><span class="item-meta">May–Jul 2025</span></div>
+        <div class="item-org">Software Engineering Intern, Server Platform / MAGPIE — agentic root-cause analysis</div>
+      </div>
+      <div class="item">
+        <div class="item-head"><span class="item-title">Samsung R&amp;D Institute Bangalore — PRISM</span><span class="item-meta">Oct 2024–May 2025</span></div>
+        <div class="item-org">Team Lead / Co-primary Researcher — HOMA multilingual agent orchestration</div>
+      </div>
+      <div class="item">
+        <div class="item-head"><span class="item-title">Vellore Institute of Technology — Dr. B. Ashok</span><span class="item-meta">Aug 2024–present</span></div>
+        <div class="item-org">Researcher — federated learning, RL/bandits, evaluation under distribution shift</div>
+      </div>
+      <div class="item">
+        <div class="item-head"><span class="item-title">Council on Energy, Environment and Water (CEEW)</span><span class="item-meta">Jun–Aug 2024</span></div>
+        <div class="item-org">Data Science Intern — NLP for job-transition analysis, ML bias correction for air-quality forecasts</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <div class="item">
+      <div class="item-desc"><strong>V. Jha</strong>, Y. Babu S. &ldquo;CA-AMFA: Context-Aware Adaptive Multi-Factor Authentication for IoT-Based Household Security Systems.&rdquo; <em>IEEE ICDSINC</em>, 2025. Best Paper Award.</div>
+      <div class="item-links"><a href="https://ieeexplore.ieee.org/abstract/document/11448177/">paper</a></div>
+    </div>
+    <div class="item">
+      <div class="item-desc">A. Jain, <strong>V. Jha</strong>, F. Alsaif, B. Ashok, I. Vairavasundaram, C. Kavitha. &ldquo;Machine learning framework using on-road realtime data for battery SoC level prediction in electric two-wheelers.&rdquo; <em>Journal of Energy Storage</em>, 97, 112884, 2024.</div>
+      <div class="item-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S2352152X24024708">paper</a></div>
+    </div>
+    <div class="item">
+      <div class="item-desc">A. Jain, <strong>V. Jha</strong>, et al. &ldquo;HOMA: Home Orchestration using Multi-Agent systems.&rdquo; <em>ICCCNT</em>, 2025. Presented; proceedings pending.</div>
+      <div class="item-links"><a href="https://github.com/IISF-SIF/HOMA">code</a></div>
+    </div>
+    <p class="more-link"><a href="/publications.html">All publications →</a></p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Outside of research, I co-founded Team Prometheus, VIT's RoboCup Small-Size League team, building it from zero into a 30+ member robotics group, and served as Vice Chairperson then Chairperson of Youth Red Cross, VIT, where our chapter organized 750+ blood donations in a single year. I grew up in Bokaro and I'm currently based in Bangalore.</p>
+  </section>
+</main>
+
+<footer class="site">
+  <span>&copy; 2026 Vatsal Jha</span>
+  <span><a href="mailto:vatsaljha17@gmail.com">vatsaljha17@gmail.com</a></span>
+</footer>
+
+</div>
+</body>
+</html>
