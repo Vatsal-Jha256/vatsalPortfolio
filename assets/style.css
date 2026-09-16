@@ -7,14 +7,31 @@
   --maxw: 860px;
 }
 
+/* System preference (used only when the visitor hasn't picked a mode) */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0c0c0d;
-    --text: #e8e8e8;
-    --muted: #a3a3a3;
+  :root:not([data-theme="light"]) {
+    --bg: #1a1b1e;
+    --text: #e4e4e3;
+    --muted: #9b9b9b;
     --accent: #7aa2f7;
-    --border: #262626;
+    --border: #2f3033;
   }
+}
+
+/* Explicit choice via the toggle, wins in both directions */
+:root[data-theme="dark"] {
+  --bg: #1a1b1e;
+  --text: #e4e4e3;
+  --muted: #9b9b9b;
+  --accent: #7aa2f7;
+  --border: #2f3033;
+}
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #171717;
+  --muted: #595959;
+  --accent: #1d4ed8;
+  --border: #e6e6e6;
 }
 
 * { box-sizing: border-box; }
@@ -29,6 +46,7 @@ body {
   font-size: 17px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .wrap {
@@ -70,6 +88,19 @@ nav.primary a:hover, nav.primary a.active { color: var(--text); text-decoration:
 nav.links { display: flex; gap: 1.1rem; font-size: 0.95rem; }
 nav.links a { text-decoration: none; color: var(--muted); }
 nav.links a:hover { color: var(--text); text-decoration: underline; }
+
+.theme-toggle {
+  font: inherit;
+  font-size: 0.85rem;
+  line-height: 1;
+  color: var(--muted);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+.theme-toggle:hover { color: var(--text); border-color: var(--muted); }
 
 h1 {
   font-size: 1.9rem;

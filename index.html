@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vatsal Jha</title>
-<meta name="description" content="Vatsal Jha — research engineer working on reliable AI systems, agentic infrastructure, and sequential decision-making.">
+<meta name="description" content="Vatsal Jha: research engineer working on reliable AI systems and sequential decision-making.">
+<script>(function(){try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%231d4ed8'/%3E%3Ctext x='12' y='17' font-family='monospace' font-size='13' fill='white' text-anchor='middle'%3EVJ%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -17,15 +18,16 @@
     <a href="/" class="active">Home</a>
     <a href="/publications.html">Publications</a>
     <a href="/cv.html">CV</a>
+    <button id="theme-toggle" class="theme-toggle" type="button">Dark</button>
   </nav>
 </header>
 
 <main>
   <h1>Vatsal Jha</h1>
-  <p class="tagline">Research engineer working on reliable AI systems, agentic infrastructure, and sequential decision-making.</p>
+  <p class="tagline">I'm a research engineer working on reliable AI systems and sequential decision-making.</p>
 
   <div class="bio">
-    <p>I build and evaluate machine-learning systems that have to work under real constraints — from multi-agent root-cause diagnosis at Samsung Research to reinforcement-learning-based infrastructure planning and reliability-focused ML deployment. My work sits between research and engineering: reading the literature, designing the method, and building the system that runs it.</p>
+    <p>I build multi-agent systems, reinforcement-learning methods, and the ML infrastructure to run them at production scale. Recent work includes a root-cause diagnosis system for distributed services at Samsung Research, a bandit-based planner for EV charging infrastructure, and audio-deepfake detection deployed at testAIng.</p>
     <p>I recently completed a B.Tech in Computer Science &amp; Engineering at Vellore Institute of Technology and am looking for research engineering, applied ML, and systems roles.</p>
   </div>
 
@@ -45,24 +47,24 @@
         <span class="item-title">Agentic root-cause analysis for distributed services</span>
         <span class="item-meta">Samsung Research India · 2025</span>
       </div>
-      <div class="item-desc">Designed and built a multi-agent RCA prototype from literature review through evaluation — modality-specialist evidence collection, hypothesis validation, cross-incident retrieval memory, and diagnosis-only safety boundaries over Prometheus, Kubernetes, Jaeger, OpenSearch and Milvus, using Google ADK and MCP. Evaluated on an OpenTelemetry Demo + Chaos Mesh fault-injection testbed.</div>
+      <div class="item-desc">Designed and built a multi-agent RCA prototype end to end, from literature review through evaluation: modality-specialist evidence collection, hypothesis validation, cross-incident retrieval memory, and diagnosis-only safety boundaries over Prometheus, Kubernetes, Jaeger, OpenSearch and Milvus, using Google ADK and MCP. Evaluated on an OpenTelemetry Demo plus Chaos Mesh fault-injection testbed.</div>
     </div>
 
     <div class="item">
       <div class="item-head">
-        <span class="item-title">HOMA — multilingual agent orchestration for smart homes</span>
+        <span class="item-title">HOMA: multilingual agent orchestration for smart homes</span>
         <span class="item-meta">Samsung PRISM · ICCCNT 2025</span>
       </div>
-      <div class="item-desc">Led a four-person research team building a multilingual SLM-orchestrated system that decomposes multi-device smart-home commands and coordinates sequential/concurrent execution across 11+ languages, with synthetic multilingual evaluation of Gemma/Qwen/Phi-family models under edge constraints.</div>
+      <div class="item-desc">Led a four-person research team building a multilingual SLM-orchestrated system that decomposes multi-device smart-home commands and coordinates sequential and concurrent execution across 11+ languages, with synthetic multilingual evaluation of Gemma, Qwen and Phi-family models under edge constraints.</div>
       <div class="item-links"><a href="https://github.com/IISF-SIF/HOMA">code</a></div>
     </div>
 
     <div class="item">
       <div class="item-head">
-        <span class="item-title">HERO — EV charging-station placement via bandit search</span>
+        <span class="item-title">HERO: EV charging-station placement via bandit search</span>
         <span class="item-meta">VIT Research · under review</span>
       </div>
-      <div class="item-desc">A two-stage system for EV-charging-station placement: an XGBoost city-level demand model feeds a simulator-in-the-loop multi-armed-bandit search over full station layouts. Outperforms 13 facility-location, metaheuristic and bandit baselines by up to 39.9% composite reward in Ann Arbor SUMO microsimulation, with zero-shot cross-city demand transfer.</div>
+      <div class="item-desc">A two-stage system for EV charging-station placement: an XGBoost city-level demand model feeds a simulator-in-the-loop multi-armed-bandit search over full station layouts. In Ann Arbor SUMO microsimulation, it outperforms 13 facility-location, metaheuristic and bandit baselines by up to 39.9% composite reward, with zero-shot cross-city demand transfer; results are reported in a manuscript currently under review.</div>
     </div>
 
     <div class="item">
@@ -70,25 +72,25 @@
         <span class="item-title">Multilingual audio deepfake detection</span>
         <span class="item-meta">testAIng · 2026</span>
       </div>
-      <div class="item-desc">Owned ML systems and research for multilingual audio-deepfake detection (ECAPA-TDNN, WavLM, mixture-of-experts), reaching 0.94–0.96 AUC on internal multilingual benchmarks and 1.97% EER on Hindi fine-tuning, then migrated model-heavy inference to Docker/Kubernetes with HPA, probes and Prometheus/Grafana.</div>
+      <div class="item-desc">Owned ML systems and research for multilingual audio-deepfake detection (ECAPA-TDNN, WavLM, mixture-of-experts), reaching 0.94 to 0.96 AUC on internal multilingual benchmarks and 1.97% EER on Hindi fine-tuning, then migrated model-heavy inference to Docker/Kubernetes with HPA, probes and Prometheus/Grafana.</div>
       <div class="item-links"><a href="https://medium.com/@vatsal.jha_28295/one-class-learning-for-audio-deepfake-detection-9a841b79a7bf">writeup</a></div>
     </div>
 
     <div class="item">
       <div class="item-head">
-        <span class="item-title">ChatterBot — scalable LLM-serving prototype</span>
+        <span class="item-title">ChatterBot: a scalable LLM-serving prototype</span>
         <span class="item-meta">Personal project</span>
       </div>
-      <div class="item-desc">FastAPI + Ray Serve/vLLM + Redis + RabbitMQ + PostgreSQL serving system with synchronous, queued-async and SSE streaming modes, context caching, retries/circuit breakers and Locust load tests; architecture designed for 10K-concurrency horizontal scaling.</div>
+      <div class="item-desc">FastAPI, Ray Serve/vLLM, Redis, RabbitMQ and PostgreSQL serving system with synchronous, queued-async and SSE streaming modes, context caching, retries and circuit breakers, and Locust load tests. Architecture designed for 10K-concurrency horizontal scaling.</div>
       <div class="item-links"><a href="https://github.com/Vatsal-Jha256/ChatterBot">code</a></div>
     </div>
 
     <div class="item">
       <div class="item-head">
-        <span class="item-title">Eldermere — multiplayer systems project</span>
+        <span class="item-title">Eldermere: a multiplayer systems project</span>
         <span class="item-meta">Personal project</span>
       </div>
-      <div class="item-desc">A Go + SvelteKit + PostgreSQL browser MUD with WebSocket room/presence state, persistent sessions, data-driven content packs, tests and Docker Compose deployment.</div>
+      <div class="item-desc">A Go, SvelteKit and PostgreSQL browser MUD with WebSocket room and presence state, persistent sessions, data-driven content packs, tests and Docker Compose deployment.</div>
       <div class="item-links"><a href="https://github.com/Vatsal-Jha256/eldermere">code</a> <a href="https://eldermere.pages.dev/">live</a></div>
     </div>
   </section>
@@ -98,23 +100,23 @@
     <div class="exp-list">
       <div class="item">
         <div class="item-head"><span class="item-title">testAIng</span><span class="item-meta">Jan–Jul 2026</span></div>
-        <div class="item-org">Machine Learning Intern — audio-deepfake detection &amp; ML infrastructure</div>
+        <div class="item-org">Machine Learning Intern, audio-deepfake detection and ML infrastructure</div>
       </div>
       <div class="item">
         <div class="item-head"><span class="item-title">Samsung Research India</span><span class="item-meta">May–Jul 2025</span></div>
-        <div class="item-org">Software Engineering Intern, Server Platform / MAGPIE — agentic root-cause analysis</div>
+        <div class="item-org">Software Engineering Intern, Server Platform / MAGPIE: agentic root-cause analysis</div>
       </div>
       <div class="item">
-        <div class="item-head"><span class="item-title">Samsung R&amp;D Institute Bangalore — PRISM</span><span class="item-meta">Oct 2024–May 2025</span></div>
-        <div class="item-org">Team Lead / Co-primary Researcher — HOMA multilingual agent orchestration</div>
+        <div class="item-head"><span class="item-title">Samsung PRISM, R&amp;D Institute Bangalore</span><span class="item-meta">Oct 2024–May 2025</span></div>
+        <div class="item-org">Team Lead / Co-primary Researcher, HOMA multilingual agent orchestration</div>
       </div>
       <div class="item">
-        <div class="item-head"><span class="item-title">Vellore Institute of Technology — Dr. B. Ashok</span><span class="item-meta">Aug 2024–present</span></div>
-        <div class="item-org">Researcher — federated learning, RL/bandits, evaluation under distribution shift</div>
+        <div class="item-head"><span class="item-title">Vellore Institute of Technology, Dr. B. Ashok</span><span class="item-meta">Aug 2024–present</span></div>
+        <div class="item-org">Researcher: federated learning, RL/bandits, evaluation under distribution shift</div>
       </div>
       <div class="item">
         <div class="item-head"><span class="item-title">Council on Energy, Environment and Water (CEEW)</span><span class="item-meta">Jun–Aug 2024</span></div>
-        <div class="item-org">Data Science Intern — NLP for job-transition analysis, ML bias correction for air-quality forecasts</div>
+        <div class="item-org">Data Science Intern: NLP for job-transition analysis, ML bias correction for air-quality forecasts</div>
       </div>
     </div>
   </section>
@@ -138,7 +140,7 @@
 
   <section id="about">
     <h2>About</h2>
-    <p>Outside of research, I co-founded Team Prometheus, VIT's RoboCup Small-Size League team, building it from zero into a 30+ member robotics group, and served as Vice Chairperson then Chairperson of Youth Red Cross, VIT, where our chapter organized 750+ blood donations in a single year. I grew up in Bokaro and I'm currently based in Bangalore.</p>
+    <p>Outside of research, I co-founded Team Prometheus, VIT's RoboCup Small-Size League team, and helped build it from zero into a 30+ member robotics group. I also served as Vice Chairperson and then Chairperson of Youth Red Cross, VIT, where our chapter organized 750+ blood donations in a single year. I grew up in Bokaro and am currently based in Bangalore.</p>
   </section>
 </main>
 
@@ -148,5 +150,6 @@
 </footer>
 
 </div>
+<script src="assets/theme.js" defer></script>
 </body>
 </html>
