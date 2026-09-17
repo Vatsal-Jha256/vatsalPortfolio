@@ -208,7 +208,7 @@ footer.site a { color: var(--muted); }
   border-radius: 6px;
 }
 @media (max-width: 700px) {
-  .pdf-embed { display: none; }
+  .pdf-embed { height: 70vh; }
 }
 
 @media (max-width: 480px) {
