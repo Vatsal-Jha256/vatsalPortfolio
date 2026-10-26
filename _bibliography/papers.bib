@@ -1,0 +1,138 @@
+---
+---
+
+% Workshop papers (NeurIPS 2026)
+
+@inproceedings{jha2026adaptivecarearena,
+  abbr = {NeurIPS W},
+  pubtype = {workshop},
+  theme = {comparison},
+  title       = {AdaptiveCareArena: Decision-Facing Evaluation of Patient World Models Under Healthcare Resource Constraints},
+  author      = {Jha, Vatsal},
+  booktitle   = {NeurIPS 2026 Workshop on World Models for High-Stakes Health (WMHS)},
+  year        = {2026},
+  note        = {Poster},
+  bibtex_show = {true},
+  selected    = {true}
+}
+
+@inproceedings{jha2026ranking,
+  abbr = {NeurIPS W},
+  pubtype = {workshop},
+  theme = {comparison},
+  title       = {Ranking Is Not Valuation: Selection-Aware Carbon Claims under Supplier Shift},
+  author      = {Jha, Vatsal and Srivastava, Anupam and Ashok, B.},
+  booktitle   = {NeurIPS 2026 Workshop on Tackling Climate Change with Machine Learning},
+  year        = {2026},
+  abstract    = {Low-carbon product recommenders often use one predicted embodied-carbon score both to pick a product and to report how much carbon that pick saves. Selecting on a prediction favours products whose error happens to be favourable, so the reported saving is biased upward. On 108,326 ready-mix concrete EPDs from 413 manufacturers, evaluated on held-out suppliers, the model ranks products usefully (pairwise accuracy 0.59, above chance in 23 of 24 splits) while its point predictions are poor (mean R² 0.08). Selected mixes are about 10% below their strength-class median, but the model's own score overstates that saving by about 9%. A selection-conditional conformal reporting bound keeps the recommended product unchanged and cuts the share of overstated claims from 51% to 11%.},
+  bibtex_show = {true},
+  selected    = {true}
+}
+
+@inproceedings{jha2026behaviorflmt,
+  abbr = {NeurIPS W},
+  pubtype = {workshop},
+  theme = {scarcity},
+  title       = {BehaviorFL-MT: Federated Multi-Task Learning under Unequal Vehicle Sensors and Partial Supervision},
+  author      = {Jha, Vatsal and Ashok, B.},
+  booktitle   = {NeurIPS 2026 Workshop on New in ML},
+  year        = {2026},
+  abstract    = {Vehicle fleets differ in which sensors each car has and in which tasks each client can supervise. BehaviorFL-MT trains destination prediction and driving-state models jointly across such a federation, and uses discovery-aware client sampling to find and revisit the rare clients that carry state labels. At a fixed budget of 112 clients per round, this raises exposure to state-supervised clients by 5.8x over uniform sampling and improves state AUPRC by about 0.10 over the strongest federated baseline, across a federation built from three public mobility datasets (VED, GeoLife, T-Drive).},
+  bibtex_show = {true},
+  selected    = {true}
+}
+
+% Conference and journal papers
+
+@inproceedings{murugaiyan2025nmpc,
+  abbr = {HINT},
+  pubtype = {conference},
+  title       = {Nonlinear Model Predictive Control for Dynamic Obstacle Avoidance in RoboCup SSL},
+  author      = {Murugaiyan, Someshwaran and Venkatesa, Abishek and Jha, Vatsal and Jain, Arav},
+  booktitle   = {HINT'25, MIT Manipal},
+  year        = {2025},
+  note        = {Presented; Springer LNNS proceedings to appear},
+  abstract    = {A nonlinear MPC planner for RoboCup Small-Size League robots that avoids moving obstacles. In MATLAB simulation it reaches a mean velocity of 1.045 m/s against 0.992 m/s for a bang-bang baseline (+5.3%). Simulation only; no on-robot validation.},
+  code        = {https://github.com/TeamPrometheusVITV/nmpc-robocup-ssl},
+  bibtex_show = {true}
+}
+
+@inproceedings{jain2025homa,
+  abbr = {ICCCNT},
+  pubtype = {conference},
+  theme = {systems},
+  title       = {HOMA: Home Orchestration using Multi-Agent Systems},
+  author      = {Jain, Arav and Jha, Vatsal and others},
+  booktitle   = {ICCCNT 2025},
+  year        = {2025},
+  note        = {Presented; proceedings to appear},
+  abstract    = {A small-language-model orchestrator for smart homes that splits a multi-device command into sub-tasks and runs them in sequence or concurrently, in 11+ languages. Evaluated with synthetic multilingual command sets across Gemma, Qwen and Phi-family models under edge constraints. Built at Samsung PRISM.},
+  code        = {https://github.com/IISF-SIF/HOMA},
+  bibtex_show = {true}
+}
+
+@inproceedings{jha2025caamfa,
+  abbr = {ICDSINC},
+  pubtype = {conference},
+  theme = {systems},
+  title       = {CA-AMFA: Context-Aware Adaptive Multi-Factor Authentication for IoT-Based Household Security Systems},
+  author      = {Jha, Vatsal and Babu S., Yokesh},
+  booktitle   = {IEEE ICDSINC 2025},
+  publisher   = {IEEE},
+  year        = {2025},
+  doi         = {10.1109/ICDSINC66221.2025.11448177},
+  html        = {https://ieeexplore.ieee.org/abstract/document/11448177/},
+  code        = {https://github.com/Vatsal-Jha256/CA-AMFA-Context-Aware-Adaptive-Multi-Factor-Authentication-for-IoT-Based-Household-Security-Systems},
+  award       = {Best Paper Award, ICDSINC 2025.},
+  award_name  = {Best Paper},
+  abstract    = {A home authentication system that decides, per attempt, how many factors (PIN, TOTP, face) to ask for, using bandit-style online weight updates over contextual risk signals. Runs on a Raspberry Pi prototype. In 11 simulated 30-day runs, Thompson sampling cut the false-acceptance rate by 44.75% against fixed weights, and UCB reduced the average number of factors required from 2.89 to 2.31.},
+  bibtex_show = {true},
+  selected    = {true}
+}
+
+@article{jain2024soc,
+  abbr = {JES},
+  pubtype = {journal},
+  title       = {Machine learning framework using on-road realtime data for battery SoC level prediction in electric two-wheelers},
+  author      = {Jain, Arav and Jha, Vatsal and Alsaif, Faisal and Ashok, B. and Vairavasundaram, Indragandhi and Kavitha, C.},
+  journal     = {Journal of Energy Storage},
+  volume      = {97},
+  pages       = {112884},
+  year        = {2024},
+  publisher   = {Elsevier},
+  doi         = {10.1016/j.est.2024.112884},
+  html        = {https://www.sciencedirect.com/science/article/pii/S2352152X24024708},
+  code        = {https://github.com/Vaav-ai/Generalized-EV-SoC-Consumption-Estimation-using-Machine-Learning},
+  abstract    = {State-of-charge prediction for electric two-wheelers from real on-road CAN/BMS telemetry, using a stochastic trip-segmentation pipeline and ensemble regressors (best: voting regressor). I wrote the software and the methodology.},
+  bibtex_show = {true},
+  selected    = {true}
+}
+
+% Patents
+
+@misc{ashok2026patent,
+  abbr = {Patent},
+  pubtype = {patent},
+  title        = {System and Method for Privacy-Preserving In-Vehicle Recommendation using Federated Learning and Cross-Domain Feature Alignment},
+  author       = {Ashok, B. and Jha, Vatsal},
+  howpublished = {Indian Patent Application No. 202641089937},
+  additional_info = {<em>Indian Patent Application No. 202641089937</em>},
+  year         = {2026},
+  note         = {Filed 24 Jul 2026; published 31 Jul 2026},
+  bibtex_show  = {true}
+}
+
+% Posters
+
+@misc{tiwari2024biascorrection,
+  abbr = {IICAQM},
+  pubtype = {poster},
+  title        = {Bias Correction of Forecasts from a Chemical Transport Model using Machine Learning for Delhi},
+  author       = {Tiwari, Shikhar and Jha, Vatsal and Rafiuddin, Mohammad and Guttikunda, Sarath K.},
+  howpublished = {9th IICAQM 2024, IIT Madras},
+  additional_info = {<em>9th IICAQM 2024, IIT Madras</em>},
+  year         = {2024},
+  note         = {Poster},
+  abstract     = {ML correction of WRF-CAMx PM2.5 forecasts for Delhi. MAPE fell from 43% to 27%, RMSE from 73 to 42 µg/m³, and correlation rose from 0.70 to 0.78. Work done at CEEW.},
+  bibtex_show  = {true}
+}
