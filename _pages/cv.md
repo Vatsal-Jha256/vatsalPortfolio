@@ -3,7 +3,7 @@ layout: page
 permalink: /cv/
 title: CV
 nav: true
-nav_order: 4
+nav_order: 3
 description: Updated September 2026.
 ---
 

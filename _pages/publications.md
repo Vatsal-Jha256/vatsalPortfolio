@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 nav: true
-nav_order: 2
+nav_order: 1
 ---
 
 Also on [Google Scholar](https://scholar.google.com/citations?user=o9ErjT4AAAAJ&hl=en). Papers under review are listed in the [CV](/cv/).

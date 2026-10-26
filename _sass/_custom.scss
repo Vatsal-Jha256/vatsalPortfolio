@@ -1,0 +1,47 @@
+// Quieter palette than the al-folio default purple
+:root {
+  --global-theme-color: #1d4ed8;
+  --global-hover-color: #1d4ed8;
+}
+html[data-theme="dark"] {
+  --global-theme-color: #7aa2f7;
+  --global-hover-color: #7aa2f7;
+}
+
+// Smaller social icons on the about page
+.social .contact-icons {
+  font-size: 1.6rem;
+  a svg {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
+// Research-question label under each publication
+.publications .theme-tag {
+  font-size: 0.75rem;
+  margin-top: 0.15rem;
+  a {
+    color: var(--global-text-color-light);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 3px;
+    padding: 0 0.4rem;
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--global-theme-color);
+  }
+}
+
+// Research questions on the home page
+.research-questions li {
+  margin-bottom: 0.6rem;
+}
+
+// Compact project cards
+.projects .card .card-title {
+  font-size: 1.15rem;
+}
+.projects .card .card-text {
+  font-size: 0.85rem;
+}
