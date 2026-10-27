@@ -22,14 +22,12 @@ latest_posts:
   enabled: false
 ---
 
-I'm a research engineer. I work on machine learning that has to decide with limited capacity: which clients to train on, which patients to check, which answers to verify. I also work on whether the results we report about such systems hold up.
+I'm a research engineer, joining Samsung Research in Bangalore. I'm interested in what happens when machine learning is used to make decisions rather than only predictions. Three questions come up again and again in my work:
 
-My work follows three questions:
+<ul class="research-questions">
+<li id="decisions"><strong>How should a learning system decide what to do next?</strong> Bandits, reinforcement learning and adaptive methods for choosing under uncertainty, such as which vehicles to train on in <a href="/publications/#jha2026behaviorflmt">federated learning</a> or how much authentication to ask for in <a href="/publications/#jha2025caamfa">CA-AMFA</a>.</li>
+<li id="evaluation"><strong>How do we know a model actually helps?</strong> Good accuracy doesn't always mean good decisions. A carbon model can rank products well and still overstate the savings it reports (<a href="/publications/#jha2026ranking">Ranking Is Not Valuation</a>), and patient models that differ in accuracy may not differ in the care decisions they lead to (<a href="/publications/#jha2026adaptivecarearena">AdaptiveCareArena</a>).</li>
+<li id="systems"><strong>How do we build AI systems that behave reliably once deployed?</strong> Agents that diagnose failures in distributed services (my internship at Samsung Research), multilingual smart-home orchestration (<a href="/publications/#jain2025homa">HOMA</a>), and deepfake detection running in production at testAIng.</li>
+</ul>
 
-<ol class="research-questions">
-<li id="comparison"><strong>Does the improvement survive a fair comparison?</strong> Many gains shrink once a method is compared at matched cost, against the simplest reasonable baseline, with enough runs to tell. I build evaluations that can return "equivalent" or "inconclusive", and that judge a model by the decision it supports. <a href="/publications/#jha2026ranking">Ranking Is Not Valuation</a> shows a carbon model that ranks products well but overstates the savings it reports. <a href="/publications/#jha2026adaptivecarearena">AdaptiveCareArena</a> asks whether differences between patient models still matter once measurement and clinician attention are scarce.</li>
-<li id="scarcity"><strong>Who gets observed and served when capacity is scarce?</strong> When only some clients, patients or sites can be observed, the allocation policy decides what gets learned and who benefits. <a href="/publications/#jha2026behaviorflmt">BehaviorFL-MT</a> finds the few vehicles that can label a rare task and samples them 5.8&times; more often for the same communication budget.</li>
-<li id="systems"><strong>Do guarantees checked in isolation hold once AI acts inside a real system?</strong> At Samsung Research I built multi-agent root-cause analysis for distributed services, kept diagnosis-only because a wrong automatic fix costs more than a slow one. <a href="/publications/#jain2025homa">HOMA</a> runs smart-home commands with small on-device models, and <a href="/publications/#jha2025caamfa">CA-AMFA</a> adapts home authentication online.</li>
-</ol>
-
-I've also built multilingual audio-deepfake detection at testAIng. I do research with Dr. B. Ashok at VIT, where I finished a B.Tech in Computer Science in 2026.
+Most of this work is applied to healthcare, climate and mobility. I finished a B.Tech in Computer Science at VIT Vellore in 2026 and still do research there with Dr. B. Ashok.

@@ -1,7 +1,7 @@
 # research questions; papers.bib entries reference these keys via `theme = {...}`
-comparison:
-  label: Fair comparison
-scarcity:
-  label: Scarce capacity
+decisions:
+  label: Decision-making
+evaluation:
+  label: Evaluation
 systems:
-  label: AI in real systems
+  label: Reliable AI systems
