@@ -32,4 +32,4 @@ My work follows three questions:
 <li id="systems"><strong>Do guarantees checked in isolation hold once AI acts inside a real system?</strong> At Samsung Research I built multi-agent root-cause analysis for distributed services, kept diagnosis-only because a wrong automatic fix costs more than a slow one. <a href="/publications/#jain2025homa">HOMA</a> runs smart-home commands with small on-device models, and <a href="/publications/#jha2025caamfa">CA-AMFA</a> adapts home authentication online.</li>
 </ol>
 
-I've also worked on multilingual audio-deepfake detection at testAIng and led the HOMA team at Samsung PRISM. I do research with Dr. B. Ashok at VIT, where I finished a B.Tech in Computer Science in 2026.
+I've also built multilingual audio-deepfake detection at testAIng. I do research with Dr. B. Ashok at VIT, where I finished a B.Tech in Computer Science in 2026.
