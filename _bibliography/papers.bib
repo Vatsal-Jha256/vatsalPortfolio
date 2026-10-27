@@ -1,0 +1,136 @@
+---
+---
+
+@inproceedings{jha2026adaptivecarearena,
+  abbr        = {NeurIPS W},
+  title       = {AdaptiveCareArena: Decision-Facing Evaluation of Patient World Models Under Healthcare Resource Constraints},
+  author      = {Jha, Vatsal},
+  booktitle   = {World Models for High-Stakes Health (WMHS) Workshop at NeurIPS},
+  year        = {2026},
+  note        = {Poster},
+  keywords    = {workshop, evaluation, healthcare},
+  abstract    = {Patient world models are usually evaluated by predictive fidelity, but their clinical value depends on the decisions their beliefs support under finite sensing, human attention and intervention capacity. We introduce AdaptiveCareArena, a real-trajectory replay benchmark that scores patient models by the resource-constrained decisions they support, instantiated on two public cohorts (CrossCheck, CES). Same-day review triage cuts missed high-severity reports relative to a neutral cyclic baseline at every tested budget, but ranking on each patient's last report recovers nearly all of the belief's advantage, so same-day triage mostly exercises the harness. A forward-looking variant finds within-person information in the moving-average belief on CES and a small decision-level gain over last report (+0.03 to +0.04 episode recall; intervals include zero). For measurement, one adaptive item-selection policy shows no practical advantage over a fixed short form, and the oracle gap is an upper bound inflated by selection. A tuned Kalman filter improves one-step accuracy by 6%, while 88 of 90 policy–budget–metric comparisons retain their direction and statistical resolution. We also name observation-action entanglement, show that gating the belief on review more than doubles missed events at the smallest budget, and show that an id-ordered cyclic baseline roughly doubles apparent attention disparity.},
+  code        = {https://github.com/Vatsal-Jha256/adaptiveCareArena},
+  preview     = {adaptivecarearena.png},
+  bibtex_show = {true},
+  selected    = {true}
+}
+
+@inproceedings{jha2026ranking,
+  abbr        = {NeurIPS W},
+  title       = {Ranking Is Not Valuation: Selection-Aware Carbon Claims under Supplier Shift},
+  author      = {Jha, Vatsal and Srivastava, Anupam and Bragadeshwaran, Ashok},
+  booktitle   = {Tackling Climate Change with Machine Learning Workshop at NeurIPS},
+  year        = {2026},
+  keywords    = {workshop, evaluation, environment},
+  abstract    = {Cement production emitted about 2.4 Gt CO2 in 2024, and specifying lower-carbon concrete is a near-term procurement lever. Yet model-based material search can use predicted embodied carbon twice: first to rank candidates, then to quantify the selected product's saving. We test that reuse on 108,326 ready-mix concrete Environmental Product Declarations (EPDs) from 413 mostly North American manufacturers, holding out whole manufacturers. Ranking retains useful signal under supplier shift while valuation degrades: mean within-class pairwise accuracy is 0.591, but mean log global warming potential (GWP) R² is 0.082. Selected mixes average 10.4% lower declared GWP than their class median, yet their declared GWP averages 9.1% (about 31 kgCO2e/m³ at the corpus median) above the value reported for them. We derive a conditional identity linking this claim gap to search depth; across pools of 2–50 products the gap is linear in depth (R² ≥ 0.97 in all three pool compositions). Changing the selection rule buys little, at a cost in realized advantage; replacing the point claim with a selection-conditional conformal floor keeps the chosen product and cuts overstatement above 0.05 log units from 51% to 11%; a simple class-quantile shift does comparably. The implied saving floor is positive in only 16.5% of cases, however, and the bound misses its 10% exceedance target on 15.2% of unseen-supplier cases. The result motivates a rank-then-report architecture for carbon recommenders.},
+  preview     = {ranking.png},
+  bibtex_show = {true},
+  selected    = {true}
+}
+
+@inproceedings{jha2026behaviorflmt,
+  abbr        = {NeurIPS W},
+  title       = {BehaviorFL-MT: Federated Multi-Task Learning under Unequal Vehicle Sensors and Partial Supervision},
+  author      = {Jha, Vatsal and Bragadeshwaran, Ashok},
+  booktitle   = {New In Machine Learning (NewInML) Workshop at NeurIPS},
+  year        = {2026},
+  keywords    = {workshop, decision-making, federated learning},
+  abstract    = {Connected vehicles differ not only in what they observe but also in which targets they can supervise: a phone-grade client may expose sparse GPS, whereas an OBD-equipped vehicle can support a telemetry-derived powertrain-state label. We introduce BehaviorFL-MT, a federated multi-task formulation that predicts destination region and a proxy powertrain-state composite (a thresholded score over RPM, engine load, and MAF variability, not a diagnostic fault code) from an early recorded-sample prefix. Two explicit masks separate missing inputs from missing targets, structured OBD dropout exposes the state head to equipped and GPS-only views, and discovery-aware participation increases rare-task exposure without prior client-label metadata. None of these ingredients is new on its own; the contribution is their combination for partially supervised vehicle federations and a controlled study of which one drives the result. On 102,843 VED, GeoLife, and T-Drive trips with client-disjoint evaluation, only VED supplies state labels (188 of 5,617 training clients), and discovery-aware participation raises natural/GPS-only state AUPRC from 0.512/0.452 (best uniform-participation federated baseline) to 0.613/0.552 over three seeds. Ablations attribute this gain to participation rather than to the masking components. An oracle with complete eligibility metadata from round 1 reaches 0.613/0.550, so online discovery recovers essentially all of the observed oracle gain despite discovering only 114–129 of the 188 eligible clients by round 60. Destination HR@5 stays at 0.748 versus 0.751, a fixed geometry prior already reaches 0.749, and macro-F1 drops from 0.339 to 0.325. The study isolates how partial task supervision, unequal sensors, and cohort composition interact in federated behavioral learning.},
+  preview     = {behaviorflmt.png},
+  bibtex_show = {true},
+  selected    = {true}
+}
+
+@inproceedings{murugaiyan2025nmpc,
+  abbr        = {HINT},
+  title       = {Nonlinear Model Predictive Control for Dynamic Obstacle Avoidance in RoboCup SSL},
+  author      = {Murugaiyan, Someshwaran and Venkatesa, Abishek and Jha, Vatsal and Jain, Arav},
+  booktitle   = {HINT, MIT Manipal},
+  year        = {2025},
+  note        = {Presented; Springer LNNS proceedings to appear},
+  keywords    = {conference, decision-making, robotics},
+  abstract    = {Model Predictive Control (MPC) offers a predictive approach to robot navigation that can significantly outperform traditional reactive methods in dynamic environments. In this paper, we propose a Nonlinear Model Predictive Control (NMPC) framework to replace the kinematics-based path-planning systems currently employed by various teams in RoboCup Small Size League (SSL). The proposed approach optimizes robot trajectories using velocity and position states over a finite prediction horizon with a sampling time of 0.05s, ensuring accurate path planning while avoiding sudden stops and turns. Our NMPC formulation incorporates dynamic obstacle prediction and enforces collision avoidance through nonlinear constraints. The robot's path is optimized using a custom cost function that integrates reference tracking, control effort minimization, and trajectory smoothness penalties. MATLAB simulations demonstrate the effectiveness of our approach: MPC achieves an average velocity of 1.045 m/s compared to 0.992 m/s for Bang-Bang control, representing a 5.3% improvement in navigation efficiency. The results show that MPC generates smoother, more efficient trajectories with proactive obstacle avoidance, making it well-suited for the strategic and dynamic requirements of RoboCup SSL environments. While these simulation results are promising, this study is limited by the absence of on-robot experimental validation and a detailed analysis of the controller's computational cost and real-time feasibility.},
+  code        = {https://github.com/TeamPrometheusVITV/nmpc-robocup-ssl},
+  preview     = {nmpc.png},
+  bibtex_show = {true}
+}
+
+@inproceedings{jain2025homa,
+  abbr        = {ICCCNT},
+  title       = {HOMA: Home Orchestration using Multi-Agent Systems},
+  author      = {Jain, Arav and Jha, Vatsal and Kar, Ayushman L. P. and Sukheswala, Dilshad and Kovendan, A. K. P. and Balaji, G. N. and Tiwari, Sourabh and Gaurav},
+  booktitle   = {ICCCNT},
+  year        = {2025},
+  note        = {Presented; proceedings to appear},
+  keywords    = {conference, ml-systems, agents},
+  abstract    = {This study introduces a novel multilingual agentic framework designed for home automation systems, enabling individuals to engage with smart home devices through natural language commands in multiple languages. The proposed system adopts a distributed multi-agent architecture with a dedicated orchestrator responsible for command classification, task decomposition, and managing the concurrent and sequential execution of device operations. By leveraging large language models (LLMs), our framework effectively interprets complex multilingual and code-mixed commands, translating these inputs into actionable device control instructions. We evaluate our framework using a synthetic dataset that includes multilingual commands in 11 low-resource Indian languages. The commands cover a range of household appliances such as air conditioners, televisions, fans, washing machines, dryers, refrigerators, and microwaves. Experimental findings attest to exceptional device recognition accuracy (90.0%), strong mode recognition (75.0%), strong parameter extraction (77.7%), moderate task type classification accuracy (59.0%), with an overall weighted accuracy of up to (80.1%) with the Gemma-3-27B model. Comparative evaluation with various open source LLMs underscores the compromises between model size and accuracy, with bigger models such as Gemma3-27B, Qwen2.5-14B, and Phi-4 outperforming smaller models. Gemma-3-4B is the most efficient model, with an impressive overall accuracy of 69.0%. This study contributes towards the development of multilingual smart home technology by providing a versatile, scalable, and language-agnostic solution.},
+  code        = {https://github.com/IISF-SIF/HOMA},
+  preview     = {homa.png},
+  bibtex_show = {true}
+}
+
+@inproceedings{jha2025caamfa,
+  abbr        = {ICDSINC},
+  title       = {CA-AMFA: Context-Aware Adaptive Multi-Factor Authentication for IoT-Based Household Security Systems},
+  author      = {Jha, Vatsal and Babu S., Yokesh},
+  booktitle   = {IEEE ICDSINC},
+  publisher   = {IEEE},
+  year        = {2025},
+  doi         = {10.1109/ICDSINC66221.2025.11448177},
+  keywords    = {conference, decision-making, ml-systems, security},
+  html        = {https://ieeexplore.ieee.org/abstract/document/11448177/},
+  code        = {https://github.com/Vatsal-Jha256/CA-AMFA-Context-Aware-Adaptive-Multi-Factor-Authentication-for-IoT-Based-Household-Security-Systems},
+  award       = {Best Paper Award, ICDSINC 2025.},
+  award_name  = {Best Paper},
+  abstract    = {Internet of Things (IoT) devices in home environments present unique security challenges that traditional authentication methods fail to address effectively. This paper presents Context-Aware Adaptive Multi-Factor Authentication (CA-AMFA), an innovative edge-based security system that dynamically adjusts authentication demands based on real-time risk analysis. The proposed approach uses an integrated risk model and leverages three contextual bandit algorithms—Upper Confidence Bound (UCB), Thompson Sampling, and Epsilon-Greedy—to dynamically update risk factor weights through continuous learning mechanisms. The hardware implementation on Raspberry Pi demonstrates the system's relevance to resource-constrained environments. Through rigorous evaluation across a variety of scenarios, it is demonstrated that the bandit-based approaches significantly outperform fixed-weight schemes, lowering false acceptance rates by up to 44.75% and lowering unnecessary authentication friction by up to 20.18%, while maintaining strong security guarantees. The UCB algorithm demonstrated the best performance, achieving perfect accuracy in high-risk scenarios where traditional approaches failed. The open-source deployment and reproducible evaluation platform make CA-AMFA a computationally efficient solution that well balances security and usability for next-generation IoT authentication systems.},
+  preview     = {caamfa.png},
+  bibtex_show = {true},
+  selected    = {true}
+}
+
+@article{jain2024soc,
+  abbr        = {JES},
+  title       = {Machine learning framework using on-road realtime data for battery SoC level prediction in electric two-wheelers},
+  author      = {Jain, Arav and Jha, Vatsal and Alsaif, Faisal and Ashok, B. and Vairavasundaram, Indragandhi and Kavitha, C.},
+  journal     = {Journal of Energy Storage},
+  volume      = {97},
+  pages       = {112884},
+  year        = {2024},
+  publisher   = {Elsevier},
+  doi         = {10.1016/j.est.2024.112884},
+  keywords    = {journal, energy},
+  html        = {https://www.sciencedirect.com/science/article/pii/S2352152X24024708},
+  code        = {https://github.com/Vaav-ai/Generalized-EV-SoC-Consumption-Estimation-using-Machine-Learning},
+  abstract    = {Electric Vehicles (EVs) offer a promising solution to climate change, yet their adoption is hindered by limited range and charging infrastructure. Accurate prediction of State of Charge (SoC) level and driving range is crucial to mitigate range anxiety and promote EV use. This study addresses SoC level prediction in Electric Two-Wheelers (E2Ws) in India, overcoming the limitations of previous research by utilizing primary datasets rather than synthetic ones. By comparing various Machine Learning (ML) models and validating them with real-world trips, a novel ML approach is introduced for forecasting SoC Level in electric scooters. The study employs stochastic segmentation for trip analysis and optimizes ML models for precise SoC prediction. KNeighbors Regressor (n_neighbours = 7) and Ensemble Models show superior performance on training data, while Linear Regression and Linear SVR models perform poorly. For the first validation trip, the accuracies of the Voting Regressor, k-Nearest Neighbours Regressor, and Bagging Regressor are 99.71%, 97.38%, and 99.21%, respectively. For the second validation trip, accuracies are 98.04%, 95.7%, and 98.52%, respectively. The study distinguishes itself through the use of primary data, Bayesian optimization for hyperparameters, and stochastic segmentation. The research culminates in an open-source library, enabling users to test the entire pipeline and conduct experiments on EV data.},
+  preview     = {evsoc.png},
+  bibtex_show = {true}
+}
+
+@misc{ashok2026patent,
+  abbr            = {Patent},
+  title           = {System and Method for Privacy-Preserving In-Vehicle Recommendation using Federated Learning and Cross-Domain Feature Alignment},
+  author          = {Ashok, B. and Jha, Vatsal},
+  howpublished    = {Indian Patent Application No. 202641089937},
+  additional_info = {<em>Indian Patent Application No. 202641089937</em>},
+  year            = {2026},
+  note            = {Filed 24 Jul 2026; published 31 Jul 2026},
+  keywords        = {patent, federated learning, ml-systems},
+  abstract        = {A privacy-preserving federated learning system for in-vehicle recommendation, such as points of interest and content, across fleets where vehicles carry different sensors. Each vehicle encodes its GPS and OBD-II telemetry into a behavior embedding; the server clusters vehicles by these embeddings and routes each one to a cluster-specific model, keeping per-driver personalization that a single global model would lose. Tier-adaptive imputation handles vehicles missing sensors (for example GPS-only) instead of zero-filling, within-trip contrastive alignment links preferences across recommendation domains, a cold-start router personalizes newly onboarded vehicles from a short driving window, and local differential privacy is applied before behavior summaries leave the vehicle.},
+  preview         = {patent.png},
+  bibtex_show     = {true}
+}
+
+@misc{tiwari2024biascorrection,
+  abbr            = {IICAQM},
+  title           = {Bias Correction of Forecasts from a Chemical Transport Model using Machine Learning for Delhi},
+  author          = {Tiwari, Shikhar and Jha, Vatsal and Rafiuddin, Mohammad and Guttikunda, Sarath K.},
+  howpublished    = {9th IICAQM, IIT Madras},
+  additional_info = {<em>9th IICAQM, IIT Madras</em>},
+  year            = {2024},
+  note            = {Poster},
+  keywords        = {poster, environment},
+  abstract        = {Random Forest bias correction of daily and hourly WRF-CAMx PM2.5 and PM10 forecasts for Delhi, trained on October 2021 to September 2023 and tested on October 2023 to April 2024. For PM2.5, MAPE fell from 43% to 27%, RMSE from 73 to 42 µg/m³, and correlation rose from 0.70 to 0.78. The model tracks average trends well but underestimates peak values.},
+  preview         = {biascorrection.png},
+  bibtex_show     = {true}
+}
