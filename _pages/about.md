@@ -6,7 +6,7 @@ subtitle: Machine learning engineer and researcher · Bangalore
 
 profile:
   align: right
-  image:
+  image: prof_pic.jpg
   image_circular: false
   more_info:
 
