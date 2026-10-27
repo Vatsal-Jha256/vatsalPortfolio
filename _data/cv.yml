@@ -24,6 +24,7 @@ cv:
         score: "CGPA 9.23/10"
         highlights:
           - "NPTEL Reinforcement Learning (IIT Madras): top 1% nationally; invited to interview for Instructor, Reinforcement Learning, IIT Madras BS programme."
+          - "NPTEL Responsible & Safe AI Systems (IIIT Hyderabad × IIT Madras): top 5% nationally."
 
     Experience:
       - company: testAIng
@@ -68,6 +69,22 @@ cv:
         highlights:
           - "NLP over ~93K task descriptions from 600+ occupations for job-transition analysis; ML bias correction of Delhi PM2.5 forecasts (IICAQM 2024 poster)."
 
+      - company: Remote collaboration with Dr. Sukalpa Chanda and Aniket Anand Gurav
+        position: Research Collaborator, handwritten text recognition
+        location: Remote
+        start_date: 2024-03
+        end_date: 2025-08
+        highlights:
+          - "End-to-end handwriting detection and recognition on IAM: ResNet-50 backbone, FOTS-style detector and an attention-augmented PHOSC recognizer."
+
+      - company: VIT × King Saud University (with Dr. B. Ashok)
+        position: ML Research Intern
+        location: Hybrid
+        start_date: 2022
+        end_date: 2024-07
+        highlights:
+          - "Software and methodology for electric two-wheeler state-of-charge prediction from on-road CAN/BMS telemetry; published in the Journal of Energy Storage."
+
     Awards:
       - title: Best Paper Award, IEEE ICDSINC 2025
         awarder: IEEE ICDSINC
@@ -82,6 +99,24 @@ cv:
       - title: 1st Prize, testAIng intern research presentation
         awarder: testAIng
         date: 2026
+
+      - title: Samsung PRISM Excellent Worklet Award
+        awarder: Samsung R&D Institute Bangalore
+        summary: For HOMA.
+      - title: Top-3 Finalist, Karnataka State Police Datathon
+        awarder: Karnataka State Police
+        date: 2024
+        summary: Out of 380 teams.
+      - title: Raman Research Award
+        awarder: Vellore Institute of Technology
+        date: 2024
+        summary: For the EV state-of-charge research.
+
+    Leadership:
+      - label: Team Prometheus, VIT RoboCup Small-Size League (2024–2026)
+        details: "Co-founder and co-lead; grew the team to 30+ students and secured in-kind sponsorship from SolidWorks, ANSYS and Altium."
+      - label: Youth Red Cross, VIT (2024–2025)
+        details: "Vice Chairperson, then Chairperson; 1,000+ blood donations, including a camp that set VIT's single-day record (750+ units)."
 
     Skills:
       - name: ML

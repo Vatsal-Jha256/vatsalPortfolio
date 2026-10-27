@@ -13,6 +13,9 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
+Filter: [journal](#journal) · [conference](#conference) · [workshop](#workshop) · [patent](#patent) · [poster](#poster)  
+Topics: [decision-making](#decision-making) · [evaluation](#evaluation) · [ML systems](#ml-systems) · [healthcare](#healthcare) · [environment](#environment) · [all](#)
+
 <div class="publications">
 
 {% bibliography %}
