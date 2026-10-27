@@ -1,14 +1,12 @@
 ---
-layout: page
+layout: cv
 permalink: /cv/
 title: CV
 nav: true
-nav_order: 3
-description: Updated September 2026.
+nav_order: 5
+cv_pdf: /assets/pdf/Vatsal_Jha_Academic_Research_CV.pdf
+cv_format: rendercv # options: rendercv, jsonresume
+description: Full CV as PDF via the icon on the right.
+toc:
+  sidebar: left
 ---
-
-[Download PDF](/assets/pdf/Vatsal_Jha_Academic_Research_CV.pdf)
-
-<object data="/assets/pdf/Vatsal_Jha_Academic_Research_CV.pdf" type="application/pdf" style="width:100%;height:1100px;">
-  <p>Your browser can't show the PDF here. <a href="/assets/pdf/Vatsal_Jha_Academic_Research_CV.pdf">Open it directly.</a></p>
-</object>

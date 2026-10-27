@@ -1,0 +1,95 @@
+cv:
+  name: Vatsal Jha
+  label: Machine Learning Engineer and Researcher
+  email: vatsaljha17@gmail.com
+  location: Bangalore, India
+  website: https://vatsaljha.dev
+  image: ""
+  summary: I build machine learning systems that make decisions, and the infrastructure that runs them.
+
+  social_networks:
+    - network: GitHub
+      username: Vatsal-Jha256
+    - network: LinkedIn
+      username: vatsal-jha-b4a6a5390
+
+  sections:
+    Education:
+      - institution: Vellore Institute of Technology
+        location: Vellore, India
+        area: Computer Science and Engineering (Internet of Things)
+        studyType: B.Tech.
+        start_date: 2022
+        end_date: 2026
+        score: "CGPA 9.23/10"
+        highlights:
+          - "NPTEL Reinforcement Learning (IIT Madras): top 1% nationally; invited to interview for Instructor, Reinforcement Learning, IIT Madras BS programme."
+
+    Experience:
+      - company: testAIng
+        position: Machine Learning Intern
+        location: Remote
+        start_date: 2026-01
+        end_date: 2026-07
+        highlights:
+          - "Multilingual audio-deepfake detection with ECAPA-TDNN, WavLM and mixture-of-experts models: 0.94–0.96 AUC on internal multilingual benchmarks, 1.97% EER after Hindi fine-tuning."
+          - "Moved inference to Docker/Kubernetes with autoscaling, probes, rolling deploys and Prometheus/Grafana."
+
+      - company: Samsung Research India
+        position: Software Engineering Intern, Server Platform
+        location: Bangalore, India
+        start_date: 2025-05
+        end_date: 2025-07
+        highlights:
+          - "Designed and built a multi-agent root-cause analysis system with Google ADK and MCP over Prometheus, Kubernetes, Jaeger, OpenSearch and Milvus; evaluated on an OpenTelemetry Demo + Chaos Mesh fault-injection testbed."
+          - "Received a full-time pre-placement offer."
+
+      - company: Samsung R&D Institute Bangalore (PRISM)
+        position: Team Lead / Co-primary Researcher
+        location: Hybrid
+        start_date: 2024-10
+        end_date: 2025-05
+        highlights:
+          - "Co-led four student researchers on HOMA, a multilingual small-model smart-home agent system (11+ languages). Samsung PRISM Excellent Worklet Award."
+
+      - company: Vellore Institute of Technology (with Dr. B. Ashok)
+        position: Researcher
+        location: Vellore / Remote
+        start_date: 2024-08
+        end_date: present
+        highlights:
+          - "Federated learning, bandits for EV charging placement, and selection-aware carbon claims. Co-inventor on Indian Patent Application 202641089937."
+
+      - company: Council on Energy, Environment and Water (CEEW)
+        position: Data Science Intern
+        location: Delhi, India
+        start_date: 2024-06
+        end_date: 2024-08
+        highlights:
+          - "NLP over ~93K task descriptions from 600+ occupations for job-transition analysis; ML bias correction of Delhi PM2.5 forecasts (IICAQM 2024 poster)."
+
+    Awards:
+      - title: Best Paper Award, IEEE ICDSINC 2025
+        awarder: IEEE ICDSINC
+        date: 2025
+        summary: For CA-AMFA.
+      - title: National Winner, IISF 2023 Space Hackathon
+        awarder: ISRO / NRSC Bhuvan
+        date: 2024
+      - title: National Winner, Samsung PRISM Hackathon
+        awarder: Samsung R&D Institute Bangalore
+        date: 2024
+      - title: 1st Prize, testAIng intern research presentation
+        awarder: testAIng
+        date: 2026
+
+    Skills:
+      - name: ML
+        icon: fa-solid fa-flask
+        keywords: "PyTorch, Hugging Face, scikit-learn, Flower, RL and bandits, federated learning, LLM agents, RAG, evaluation"
+      - name: Systems
+        icon: fa-solid fa-server
+        keywords: "Docker, Kubernetes, KEDA, FastAPI, Ray Serve, vLLM, MCP, PostgreSQL, Redis, RabbitMQ, Prometheus, Grafana"
+      - name: Languages
+        icon: fa-solid fa-code
+        keywords: "Python, Go, C++, Java, SQL, TypeScript"

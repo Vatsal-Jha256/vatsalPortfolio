@@ -1,7 +1,0 @@
-# research questions; papers.bib entries reference these keys via `theme = {...}`
-decisions:
-  label: Decision-making
-evaluation:
-  label: Evaluation
-systems:
-  label: Reliable AI systems
