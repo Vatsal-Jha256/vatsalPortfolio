@@ -51,7 +51,7 @@ cv:
         start_date: 2024-10
         end_date: 2025-05
         highlights:
-          - "Co-led four student researchers on HOMA, a multilingual small-model smart-home agent system (11+ languages). Samsung PRISM Excellent Worklet Award."
+          - "Co-led four student researchers on HOMA, a multilingual LLM multi-agent system for smart homes (11 Indian languages). Samsung PRISM Excellent Research Award (2025)."
 
       - company: Vellore Institute of Technology (with Dr. B. Ashok)
         position: Researcher
@@ -100,8 +100,9 @@ cv:
         awarder: testAIng
         date: 2026
 
-      - title: Samsung PRISM Excellent Worklet Award
+      - title: Samsung PRISM Excellent Research Award
         awarder: Samsung R&D Institute Bangalore
+        date: 2025
         summary: For HOMA.
       - title: Top-3 Finalist, Karnataka State Police Datathon
         awarder: Karnataka State Police

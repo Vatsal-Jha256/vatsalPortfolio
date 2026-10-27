@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**BehaviorFL-MT** was accepted at the NeurIPS 2026 New in ML workshop.
+**BehaviorFL-MT** was accepted at the New In Machine Learning (NewInML) Workshop at NeurIPS 2026.
